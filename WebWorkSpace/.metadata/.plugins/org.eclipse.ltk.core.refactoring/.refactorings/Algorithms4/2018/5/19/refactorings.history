@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;Algorithms4&apos;&#x0D;&#x0A;- Original project: &apos;Algorithms4&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JUMPFloor.java&#x0D;&#x0A;     MinNumberInRotateArray.java&#x0D;&#x0A;     NumberOfOne.java&#x0D;&#x0A;     Solution.java&#x0D;&#x0A;     TreeNodeFromPreMid.java" description="Delete elements" element1="NumberOfOne.java" element2="JUMPFloor.java" element3="TreeNodeFromPreMid.java" element4="Solution.java" element5="MinNumberInRotateArray.java" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1525763725345" subPackages="false" version="1.0"/>
+</session>

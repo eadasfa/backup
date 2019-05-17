@@ -1,0 +1,19 @@
+package test;
+
+public class NumberOfOne {
+
+	public int  numberOfOne(int a)
+	{
+		String b= Integer.toBinaryString(a);
+		System.out.println(b);
+		int t = b.length();
+		b.replace('1', ' ');
+		System.out.println(b);
+		return t-b.split(" ").length;
+	}
+	public static void main(String[] args) {
+		int a = 100;
+		NumberOfOne n = new NumberOfOne();
+		System.out.println(n.numberOfOne(a));
+	}
+}

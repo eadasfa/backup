@@ -1,0 +1,26 @@
+package com.qi;
+import java.awt.*;
+import javax.swing.*;
+
+public class text {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// JFrame是一个顶层容器（可以添加其他swing组件的类）
+		JFrame jf = new JFrame();
+		//给窗体设置标题
+		jf.setTitle("Hello,world");
+		
+		//设置大小,按像素计算（密度单位）
+		jf.setSize(200,200);
+		//设置初始位置
+		jf.setLocation(500,500);
+		//显示
+		jf.setVisible(true);
+	}
+
+}
+

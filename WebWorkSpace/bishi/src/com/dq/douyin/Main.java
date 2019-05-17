@@ -1,0 +1,39 @@
+package com.dq.douyin;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String s = in.next();
+		Main m = new Main();
+		System.out.println(m.getLongestString(s));
+	}
+
+	public int getLongestString(String s) {
+		System.out.println(s.length());
+		if (s == null || s.length() == 0)
+			return 0;
+		int start = 0;
+		int b[] = new int[s.length()];
+		b[0] = 1;
+		int max = 1;
+		for (int i = 1; i < s.length(); i++) {
+			if (s.charAt(i) == 'b') {
+				System.out.println(0);
+			}
+			int t = (s.substring(start, i)).indexOf(s.charAt(i));
+
+			if (t < 0) {
+				b[i] = b[i - 1] + 1;
+			} else {
+				b[i] = i - (start + t);
+				start = start + t + 1;
+			}
+			if (max < b[i])
+				max = b[i];
+
+		}
+		return max;
+	}
+}

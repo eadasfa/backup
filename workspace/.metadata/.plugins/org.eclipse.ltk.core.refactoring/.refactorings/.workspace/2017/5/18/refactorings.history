@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将Java 项目“Hello”重命名为“Sound”&#x0D;&#x0A;－ 原始元素：“Hello”&#x0D;&#x0A;－ 重命名的元素：“Hello”&#x0D;&#x0A;－ 更新对已重构元素的引用" description="重命名 Java 项目“Hello”" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Hello" name="Sound" references="true" stamp="1494039162193" version="1.0"/>
+</session>

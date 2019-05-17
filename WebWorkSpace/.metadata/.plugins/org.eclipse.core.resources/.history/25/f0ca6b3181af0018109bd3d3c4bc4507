@@ -1,0 +1,9 @@
+package com.dq.o2o.entity;
+/**
+ * 店铺实体
+ * @author dangqi
+ *
+ */
+public class Shop {
+
+}

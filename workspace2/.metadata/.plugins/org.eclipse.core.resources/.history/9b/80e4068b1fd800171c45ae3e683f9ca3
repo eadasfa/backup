@@ -1,0 +1,7 @@
+package com.qi.fiveinrow;
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame{
+	
+}

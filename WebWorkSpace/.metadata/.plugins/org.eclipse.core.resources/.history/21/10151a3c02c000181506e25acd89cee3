@@ -1,0 +1,12 @@
+package test2;
+
+public class InversePairs {
+	 public int InversePairs(int [] array) {
+		
+		return 0;
+	 }
+	 private int merge(int[] array, int lo, int hi) {
+		 if(lo>==hi) return 0;
+		 
+	 }
+}

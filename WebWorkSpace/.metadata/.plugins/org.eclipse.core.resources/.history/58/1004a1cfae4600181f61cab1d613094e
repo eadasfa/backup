@@ -1,0 +1,15 @@
+package test;
+
+public class NumberOfOne {
+
+	public int numberOfOne(int a)
+	{
+		int b= Integer.bitCount(a);
+		return b;
+	}
+	public static void main(String[] args) {
+		int a = 12;
+		NumberOfOne n = new NumberOfOne();
+		System.out.println(n.numberOfOne(a));
+	}
+}

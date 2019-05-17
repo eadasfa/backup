@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将编译单元“com.text.TEXT2.java”重命名为“Test0.java”&#x0D;&#x0A;－ 原始项目：“Textprogram”&#x0D;&#x0A;－ 原始元素：“com.text.TEXT2.java”&#x0D;&#x0A;－ 重命名的元素：“com.text.Test0.java”" description="重命名编译单元“TEXT2.java”" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.text{TEXT2.java" name="Test0.java" references="false" stamp="1494252061376" version="1.0"/>
+</session>

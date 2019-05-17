@@ -1,0 +1,9 @@
+package com.dq.o2o.entity;
+
+public class ProductCategory {
+	private Long productCategoryId;
+	private Long shopId;
+	private String productCategoryName;
+	private Integer priority;
+	private Date createTime;
+}

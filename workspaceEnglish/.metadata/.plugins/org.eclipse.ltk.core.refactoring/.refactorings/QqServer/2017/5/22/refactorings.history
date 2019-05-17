@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.qq.server.model.MqQqServer&apos; to &apos;MyQqServer&apos;&#x0D;&#x0A;- Original project: &apos;QqServer&apos;&#x0D;&#x0A;- Original element: &apos;com.qq.server.model.MqQqServer&apos;&#x0D;&#x0A;- Renamed element: &apos;com.qq.server.model.MyQqServer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MqQqServer&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.qq.server.model{MqQqServer.java[MqQqServer" matchStrategy="1" name="MyQqServer" qualified="false" references="true" similarDeclarations="false" stamp="1495977024091" textual="false" version="1.0"/>
+</session>

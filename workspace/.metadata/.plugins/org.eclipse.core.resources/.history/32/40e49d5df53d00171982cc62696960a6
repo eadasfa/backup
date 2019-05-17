@@ -1,0 +1,19 @@
+package com.mhl.view;
+
+import javax.swing.*;
+
+
+public class UserLogin extends JDialog{
+	
+	public static void main(String args[]){
+		UserLogin user = new UserLogin();
+	}
+	public UserLogin()
+	{
+		this.setSize(360,360);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+		this.setVisible(true);
+	}
+
+}

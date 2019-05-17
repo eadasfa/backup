@@ -1,0 +1,10 @@
+package test;
+
+public class Demo {
+	public static void main(String[] args) {
+		Integer t = 0;
+		Integer t2 = 1;
+		int t3 = 1;
+		System.out.println(t3 == t);
+	}
+}

@@ -1,0 +1,32 @@
+package test;
+
+public class Demo {
+	public static void main(String[] args) {
+//		Integer t = 0;
+//		Integer t2 = 1;
+//		int t3 = 1;
+//		System.out.println(t3 == t);
+		String s1 = "abc";
+		String s2 = new String(s1);
+		String s3 = new String("c");
+		String s4 = "ab"+s3;
+		System.out.println(s1==s2);
+		System.out.println(s4==s1);
+	}
+}
+class HelloA {
+public HelloA(){
+    System.out.println("HelloA");
+}
+{System.out.println("I'm A class");}
+static{System.out.println("static A");}  
+}
+class HelloB extends HelloA{
+ 
+    public HelloB(){
+        System.out.println("HelloB");
+    }
+    {System.out.println("I'm B class");}
+    static{System.out.println("static B");}
+   
+}

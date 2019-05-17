@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="space"/>
+			<item value="Integer"/>
+			<item value="int"/>
+			<item value="Long"/>
+			<item value="long"/>
+			<item value="leftJ"/>
+			<item value="leftK"/>
+			<item value="leftI"/>
+			<item value="System"/>
+			<item value="Thumb"/>
+			<item value="`"/>
+			<item value="CATALINA_BASE"/>
+			<item value="Max"/>
+			<item value="imooc.myo2o"/>
+			<item value="mys"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Long"/>
+			<item value="long"/>
+			<item value="Integer"/>
+			<item value="int"/>
+			<item value="a[1]"/>
+			<item value="a[2]"/>
+			<item value="a[0]"/>
+			<item value=""/>
+			<item value="max"/>
+			<item value="dq.o2o"/>
+			<item value="getKth"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="300" key="DIALOG_WIDTH"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+		<item value="409" key="DIALOG_HEIGHT"/>
+		<item value="323" key="DIALOG_X_ORIGIN"/>
+		<item value="133" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

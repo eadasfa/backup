@@ -1,0 +1,48 @@
+package test2;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Print1ToMaxOfNDigits {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		while(true) {
+			print1NumbersOfLength(s.nextInt());
+		}
+	}
+	public static void print1NumbersOfLength(int n) {
+		char[] num = new char[n];
+		for(int i=0;i<num.length;i++) {
+			num[0] = '0';
+		}
+		print1ToMaxOfNDigits(num);
+	}
+	private static void print1ToMaxOfNDigits(char[] num) {
+		
+		while(!increse(num)) {
+			System.out.println(new String(num).replaceFirst("0*", ""));
+			break;
+		}
+	}
+	private static boolean increse(char[] num) {
+
+		boolean isOver = false;
+		int nTakeOver = 0;
+		for(int i=num.length-1;i>=0;i--) {
+			int lastT = num[i]-'0'+nTakeOver;
+			if(i==num.length-1) lastT++;
+			if(lastT>=10) {
+				if(i==0) {
+					isOver = true;
+				}else {
+					nTakeOver = 1;
+					num[i] = '0';
+				}
+			}else {
+				num[i] = (char) (lastT+'0');
+				break;
+			}
+		}
+		return isOver;
+	}
+}

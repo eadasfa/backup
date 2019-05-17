@@ -1,0 +1,29 @@
+package qi.demo;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * 把一个数组里的数组组合全部列出来，如1,2 列出来为[1,2,12,21]
+ * @author Administrator
+ *
+ */
+public class Demo01 {
+	public static void main(String[] args) {
+		String [] array = new String[] {
+				"1","2","3","4"
+		};
+		listAll(Arrays.asList(array),"");
+	}
+	public static void listAll(List candidate,String prefix) {
+		if(candidate.isEmpty())
+			System.out.println(prefix);
+		
+		for(int i=0;i<candidate.size();i++)
+		{
+			List temp = new LinkedList(candidate);
+			listAll(temp,prefix+temp.remove(i));
+		}
+	}
+}

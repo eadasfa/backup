@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将编译单元“MyTankGane.java”重命名为“MyTankGame.java”&#x0D;&#x0A;－ 原始项目：“MyTankGame1”&#x0D;&#x0A;－ 原始元素：“MyTankGane.java”&#x0D;&#x0A;－ 重命名的元素：“MyTankGame.java”" description="重命名编译单元“MyTankGane.java”" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{MyTankGane.java" name="MyTankGame.java" references="false" stamp="1482593336465" version="1.0"/>
+</session>

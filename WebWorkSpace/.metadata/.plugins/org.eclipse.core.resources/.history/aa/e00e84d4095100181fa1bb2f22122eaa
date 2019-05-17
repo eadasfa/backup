@@ -1,0 +1,48 @@
+package four;
+
+public class ZeroOneKnapsackInBackTracking {
+	private int sumValue;
+	private int sumWeight;
+	private int maxWeight;
+	private int value[];
+	private int weight[];
+	private int maxValue = Integer.MIN_VALUE;
+	int status = 0;
+	public int knapsack(int value[], int weight[], int maxWeight)
+	{
+		
+		this.maxWeight = maxWeight;
+		this.value = value;
+		this.weight = weight;
+		
+		pickUpI(0);
+		return maxValue;
+	}
+	public void pickUpI(int i,int sumWeight,int sumValue)
+	{
+		if(i>=value.length)	{
+			
+			if(sumValue>maxValue)
+			{
+				maxValue = sumValue;
+			}
+			return;
+		}
+		pickUpI(i+1,sumWeight);
+
+		if(maxWeight-sumWeight>=weight[i])
+		{
+			sumValue+=weight[i];
+			pickUpI(i+1,sumWeight);
+			sumValue-=weight[i];
+		}
+	}
+	public static void main(String[] args) {
+		ZeroOneKnapsackInBackTracking zok = new ZeroOneKnapsackInBackTracking();
+		int value[] = {20,30,65,40,60};
+		int weight[] = {10,20,30,40,50};
+		int a=zok.knapsack(value, weight,100);
+		System.out.println(a);
+		
+	}
+}

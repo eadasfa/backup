@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+	body, html {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		margin:0;
+		font-family:"微软雅黑";
+	}
+	#allmap {
+		width: 80%;
+		height: 100%;
+		overflow: hidden;
+		margin:auto;
+		font-family:"微软雅黑";
+	}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=R2vaxtDwYzEx3Ak1T19dHnwdPuoqYwOO"></script>
+	<title>地图展示</title>
+</head>
+<body onload="loadFirst()">
+	<div align="center">
+		<form action="daohang" method="post" id = "form"  target="id_iframe">
+			起点:&nbsp;
+			<select id = "start" name="theStart">
+				<option value="1">竹园 1 号楼</option>
+	  			<option value="2">竹园 2 号楼</option>
+	  			<option value="3">竹园 3 号楼</option>
+	  			<option value="4">竹园 4 号楼</option>
+	  			<option value="5">海棠 5 号楼</option>
+	  			<option value="6">海棠 6 号楼</option>
+	  			<option value="7">海棠 7 号楼</option>
+	  			<option value="8">海棠 8 号楼</option>
+	  			<option value="9">海棠 9 号楼</option>
+	  			<option value="10">海棠 10 号楼</option>
+	  			<option value="11">丁香 11 号楼</option>
+	  			<option value="12">丁香 12 号楼</option>
+	  			<option value="13">丁香 13 号楼</option>
+	  			<option value="14">丁香 14 号楼</option>
+	  			<option value="15">丁香 15 号楼</option>
+	  			
+			</select>&nbsp;
+			终点:&nbsp;
+			<select id = "end" name = "theEnd">
+				
+			</select>&nbsp;
+			<input type="submit"  value="查询"  onclick="clickQuery()">
+	
+		</form>
+	</div><br />
+	<div id="allmap" ></div>
+	<iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe> 
+</body>
+</html>
+<script>
+	var place1 = new place(1,108.847085,34.132489);
+	var place2 = new place(2,108.846259,34.132862);
+	var place3 = new place(3,108.845333,34.133243);
+	var place4 = new place(4,108.844561,34.133594);
+	var place5 = new place(5,108.84156,34.134909);
+	var place6 = new place(6,108.841569,34.135387);
+	var place7 = new place(7,108.83927,34.136194);
+	var place8 = new place(8,108.839126,34.136508);
+	var place9 = new place(9,108.837841,34.135566);
+	var place10 = new place(10,108.838938,34.135574);
+	var place11 = new place(11,108.83529,34.130292);
+	var place12 = new place(12,108.834635,34.129202);
+	var place13 = new place(13,108.834823,34.129157);
+	var place14 = new place(14,108.836494,34.128387);
+	var place15 = new place(15,108.836826,34.128372);
+//	var bBuiding = new place(end,108.838264,34.132248)
+	var end = new BMap.Point(108.838264,34.132248);
+	var places = new Array(place1,place2,place3,place4,place5,place6,place7,place8,place9,place10,place11,place12,place13,place14,place15);
+	
+	function clickQuery()
+	{
+		
+		var start = document.getElementById("start");
+		var place;
+		for(var i=1;i<=places.length;i++)
+		{
+			if(places[i-1].name==start.value)
+			{
+				walking.search(places[i-1].point,end);
+			}
+		}
+	}
+	function loadFirst()
+	{
+		var endTo = new Array('入口1','入口2','入口3','入口4','101','105','106','201','203','206','207','208','211','216','217','301','303','306','307','308','311','312','314','315','316','318','320','321','401','403','406','407','408','411','412','414','415','416','418','419','421','422','425','426','501','502','503','506','507','509','510','511','513','514','516','517','520','521','601','602','603','605','606','608','609','612','613','701','703','706','707');
+		var end = document.getElementById("end");
+		for(var i=0;i<endTo.length;i++)
+		{
+			end.options.add(new  Option(endTo[i], endTo[i]))
+		}
+	}
+	function place(name, x , y)
+	{
+		this.name = name;
+		this.x = x;
+		this.y = y;
+		this.point = new BMap.Point(x,y);
+	}
+</script>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	map.centerAndZoom(new BMap.Point(108.839818,34.13047), 16);  // 初始化地图,设置中心点坐标和地图级别
+																	//西电
+	//添加地图类型控件
+	map.addControl(new BMap.MapTypeControl({
+		mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));	  
+    var walking = new BMap.WalkingRoute(map, {renderOptions:{map: map, autoViewport: true}});
+//	walking.search(new BMap.Point(108.847085,34.132489),new BMap.Point(108.844561,34.133594));
+    map.addControl(new BMap.NavigationControl());    
+	map.addControl(new BMap.ScaleControl());    
+	map.addControl(new BMap.OverviewMapControl());    
+	map.addControl(new BMap.MapTypeControl());    
+	map.setCurrentCity("西电");          // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+</script>
+

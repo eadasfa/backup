@@ -1,0 +1,11 @@
+DELEGATES_PREFERENCE=delegateValidatorList
+USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;com.genuitec.eclipse.reporting.validator.ReportValidator;com.genuitec.eclipse.jsf.facelets.FaceletsValidator;
+USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator;com.genuitec.eclipse.reporting.validator.ReportValidator;com.genuitec.eclipse.jsf.facelets.FaceletsValidator;
+USER_PREFERENCE=saveAutomaticallyfalseprojectsCanOverridetruedisableAllValidationfalseversion1.2.300.me201108091322
+confirmDialog=true
+eclipse.preferences.version=1
+override=true
+saveAuto=false
+stateTS=0
+suspend=false
+vf.version=3

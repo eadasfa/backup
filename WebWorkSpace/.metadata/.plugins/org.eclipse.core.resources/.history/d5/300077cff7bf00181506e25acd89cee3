@@ -1,0 +1,10 @@
+package test2;
+
+public class FirstAppearChar {
+	public int FirstNotRepeatingChar(String str) {
+		int length = str.length();
+		Integer[] temp = new Integer[26];
+		
+        return 0;
+    }
+}

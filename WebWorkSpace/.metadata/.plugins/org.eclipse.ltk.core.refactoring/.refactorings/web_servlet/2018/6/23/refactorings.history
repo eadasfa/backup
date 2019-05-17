@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.response&apos; to &apos;com.qf.response&apos;&#x0D;&#x0A;- Original project: &apos;web_servlet&apos;&#x0D;&#x0A;- Original element: &apos;web_servlet/src/com.response&apos;&#x0D;&#x0A;- Renamed element: &apos;web_servlet/src/com.qf.response&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.response&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.response" name="com.qf.response" qualified="false" references="true" stamp="1528457862978" textual="false" version="1.0"/>
+</session>

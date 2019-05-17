@@ -1,0 +1,60 @@
+package four;
+
+public class ZeroOneKnapsackInBackTracking {
+	private int maxWeight;
+	private int value[];
+	private int weight[];
+	private int maxValue;
+	private int status;
+	private int n=0;
+	public String knapsack(int value[], int weight[], int maxWeight)
+	{
+		reset(value, weight, maxWeight);
+		pickUpI(0,0,0);
+		StringBuffer res = new StringBuffer(Integer.toBinaryString(status));
+		int l =res.length();
+		if(l<value.length)
+			for(int i=0;i<value.length-l)
+		return String.format("×î´ó:%d %s", 
+				maxValue,);
+	}
+	public void pickUpI(int i,int sumWeight,int sumValue)
+	{
+		if(i>=value.length)	{
+			
+			if(sumValue>maxValue)
+			{
+				maxValue = sumValue;
+				this.status = n;
+			}
+			return;
+		}
+		pickUpI(i+1,sumWeight,sumValue);
+		n++;
+		if(maxWeight-sumWeight>=weight[i])
+			pickUpI(i+1,sumWeight+weight[i],sumValue+value[i]);
+		else n+=(1<<(value.length-i-1))-1;
+
+	}
+	public void reset(int value[], int weight[], int maxWeight)
+	{
+		this.maxWeight = maxWeight;
+		this.value = value;
+		this.weight = weight;
+		this.maxValue = Integer.MIN_VALUE;
+		this.status = 0;
+		this.n=0;
+	}
+	public static void main(String[] args) {
+		ZeroOneKnapsackInBackTracking zok = new ZeroOneKnapsackInBackTracking();
+		int value[] = {20,30,65,40,60};
+		int weight[] = {10,20,30,40,50};
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println("MAXWeight:"+i*10);
+			String a=zok.knapsack(value, weight,i*10);
+			System.out.println(a);
+		}
+		
+	}
+}

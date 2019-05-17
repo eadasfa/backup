@@ -1,0 +1,8 @@
+package test2;
+
+public class InversePairs {
+	 public int InversePairs(int [] array) {
+		
+		return 0;
+	 }
+}

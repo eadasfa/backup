@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;qi.gc&apos; to &apos;javaForInterview/src&apos;&#x0D;&#x0A;- Original project: &apos;GCFinalizeDemo&apos;&#x0D;&#x0A;- Destination element: &apos;javaForInterview/src&apos;&#x0D;&#x0A;- Original element: &apos;GCFinalizeDemo/src/qi.gc&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=javaForInterview/src" element1="/src&lt;qi.gc" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1527232712735" version="1.0"/>
+</session>
